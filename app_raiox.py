@@ -28,7 +28,7 @@ if uploader_file is not None:
         
         labels_names = {0: 'Covid-19', 1: 'Normal', 2: 'Pneunomia viral', 3: 'Pneunomia bacterial'}
 
-        model = load_model('.\weights.hdf5')
+        model = load_model('weights.hdf5')
         predict = model(img)
         predict_class = np.argmax(predict)
         predict_proba = predict.numpy()
