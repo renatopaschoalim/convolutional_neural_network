@@ -2,4 +2,3 @@ opencv-python == 4.5.2.54
 streamlit == 0.83.0
 keras == 2.4.3
 tensorflow == 2.5.0
-PIL == 8.2.0
