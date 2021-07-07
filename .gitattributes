@@ -2,3 +2,4 @@
 *.h5 filter=lfs diff=lfs merge=lfs -text
 convolutional_neural_network/* filter=lfs diff=lfs merge=lfs -text
 Weights/weights.hdf5 filter=lfs diff=lfs merge=lfs -text
+Weights/*.hdf5 filter=lfs diff=lfs merge=lfs -text
