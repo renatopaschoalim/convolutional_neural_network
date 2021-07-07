@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from keras.models import load_model
 from PIL import Image
-from keras.preprocessing.image import img_to_array, load_img
+from keras.preprocessing.image import img_to_array
 
 uploader_file = st.file_uploader("Carregar Image Raio X", type=['png','jpg','jpeg'], accept_multiple_files=False)
 if uploader_file is not None:
@@ -28,7 +28,7 @@ if uploader_file is not None:
         
         labels_names = {0: 'Covid-19', 1: 'Normal', 2: 'Pneunomia viral', 3: 'Pneunomia bacterial'}
 
-        model = load_model('https://drive.google.com/file/d/1Z0Acod_-4VBVhjTf4CvNCbC_6Iac0Vya/view?usp=sharing')
+        model = load_model('.\weights.hdf5')
         predict = model(img)
         predict_class = np.argmax(predict)
         predict_proba = predict.numpy()
