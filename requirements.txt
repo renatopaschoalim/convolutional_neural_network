@@ -1,6 +1,6 @@
 opencv-python-headless
 streamlit==0.83.0
-keras==2.3.1
+keras==2.2.0
 tensorflow
 tensorflow-estimator
 tensorflow-gpu
